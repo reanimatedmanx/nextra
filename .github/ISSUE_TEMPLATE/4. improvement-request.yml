@@ -1,0 +1,46 @@
+name: 🤔 Improvement request
+description: File an improvement request
+title: "[Improvement]: "
+labels: ["improvement", "request"]
+projects: ["reanimatedmanx/projects/4"]
+assignees:
+  - reanimatedmanx
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for requesting this improvement, we will take a look as soon as we have time for it!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: improvement-part-section
+    attributes:
+      label: What part of the codebase should be improved?
+      description: A brief description of the parts involved in the improvement.
+      placeholder: Tell us what's your idea!
+      value: "So we can do improve this code..."
+    validations:
+      required: true
+  - type: textarea
+    id: refactoring-reason-section
+    attributes:
+      label: What is the reason for this improvement?
+      description: A brief description of the reasons for improvement.
+      placeholder: Tell us why it would be better improved!
+      value: "This will improve the running speed over 9000..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
