@@ -1,0 +1,37 @@
+name: 📦 Technical Chore request
+description: File a technical chore request
+title: "[Chore]: "
+labels: ["chore", "request"]
+projects: ["reanimatedmanx/projects/4"]
+assignees:
+  - reanimatedmanx
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for requesting this technical chore task, we will take a look as soon as we have time for it!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: chore-part-section
+    attributes:
+      label: What should be done as part of this technical chore?
+      description: A brief description of the task needed to be done.
+      placeholder: Tell us what did you found!
+      value: "So if we look at the package XYZ's version it is..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
