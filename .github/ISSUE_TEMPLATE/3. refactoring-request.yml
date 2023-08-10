@@ -1,0 +1,46 @@
+name: 💩 Refactoring request
+description: File a refactoring request
+title: "[Refactor]: "
+labels: ["feature", "request"]
+projects: ["reanimatedmanx/projects/4"]
+assignees:
+  - reanimatedmanx
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for requesting this refactoring, we will take a look as soon as we have time for it!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: refactoring-part-section
+    attributes:
+      label: What component/module/part should be refactored?
+      description: A brief description of the parts involved in the refactoring.
+      placeholder: Tell us where does it itch!
+      value: "Just look at your code guys!"
+    validations:
+      required: true
+  - type: textarea
+    id: refactoring-reason-section
+    attributes:
+      label: What is the reason for this refactoring?
+      description: A brief description of the reasons for refactoring.
+      placeholder: Tell us why does it itch!
+      value: "It's not freaking readable!"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
