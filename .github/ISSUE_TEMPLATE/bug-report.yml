@@ -35,7 +35,7 @@ body:
       options:
         - 2.x.x (Current)
         - 3.x.x (Next)
-      default: 2.x.x
+      default: 0
     validations:
       required: true
   - type: dropdown
